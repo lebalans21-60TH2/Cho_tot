@@ -1,0 +1,126 @@
+/* components/Navbar.module.css */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 10px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  .nav a:hover {
+    color: #4CAF50;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #a2fe40; /* Màu sắc khi mục được chọn */
+  }
+  
+  /* Phan thanh loc gia san pham */
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+}
+
+.thumb--left {
+  z-index: 3;
+}
+
+.thumb--right {
+  z-index: 4;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  width:100%;
+}
+
+.slider__track,
+.slider__range,
+.slider__left-value,
+.slider__right-value {
+  position: absolute;
+}
+
+.slider__track,
+.slider__range {
+  border-radius: 3px;
+  height: 5px;
+}
+
+.slider__track {
+  background-color: #ced4da;
+  width: 100%;
+  z-index: 1;
+}
+
+.slider__range {
+  background-color: #f80;
+  z-index: 2;
+}
+
+.slider__left-value,
+.slider__right-value {
+  color: #dee2e6;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.labelPrice{
+  transform: scale(.7143) translateY(-10px);
+  font-weight: 700;
+  white-space: nowrap;
+  width: calc(100% - 24px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  cursor: text;
+  pointer-events: none;
+  transform-origin: top left;
+  transition: transform .1s ease;
+  color: #8c8c8c;
+  font-size: .875rem
+}

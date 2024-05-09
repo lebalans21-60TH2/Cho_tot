@@ -1,0 +1,17 @@
+.liDirections{
+    font-size: 12px;
+    display: inline;
+    color: #33659c;
+}
+.liDirections::after{
+    color: #33659c;
+    content: "»";
+    padding: 0 5px
+}
+.commonstyle{
+    display: inline-block;
+}
+.commonstyle::after {
+    content: "·";
+    display: inline-block;
+}
